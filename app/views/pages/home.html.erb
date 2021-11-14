@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="home">
+  <h1>Create your QR code!</h1>
+  <div class="empty_square"></div>
+  <form action="/qrcodes" method="POST" data-remote="true" id="new_qrcode">
+     <input type="hidden" name="authenticity_token" value="fUrBymmVzFG49YTQE9xKfohttEtW7eHnui2WT6KWpRXT6g9dz73lhZ7bRdHH+RuV/TFoB23OG5l1eo731o8l6g==">
+    <input type="text" name="name" placeholder="Website name" id="qr_name">
+    <input type="submit" id="qr_submit"  value="Create" data-disable-with="Search">
+  </form>
+</div>
